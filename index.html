@@ -32,7 +32,7 @@
 				<footer>
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/profile.php?id=100000210220499" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-<!--						<li><a href="https://www.linkedin.com/in/yu-ju-huang" class="icon solid fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
+						<li><a href="https://www.linkedin.com/in/yu-ju-huang" class="fab fa-linkedin-in"><span class="label"></span></a></li>
 						<li><a href="https://github.com/yuju-huang" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="mailto:yjhuang@cs.cornell.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
@@ -44,7 +44,6 @@
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
@@ -52,20 +51,49 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Yu-Ju Huang (黃昱儒)</h2>
-										<p>I'm a 2nd-year PhD at Cornell University!</p>
+										<h2>Yu-Ju Huang  (黃昱儒)</h2>
+							            <h4>I'm a 3rd-year PhD student at Cornell University working with Prof. <a href="https://www.cs.cornell.edu/~rvr/">Robbert van Renesse</a>!</h4>
 									</header>
-                                    <p>I do Computer Systems research.</p>
-                                    <p>I play <a href="images/kendo.jpg">Kendo.</a></p>
-                                    <p>I had a <a href="images/rock2.jpg">band</a> and we <a href="images/rock.jpg">ROCK!</a></p>
-                                    <p>I motorcycle <a href="images/motor1.jpg">around</a> and <a href="images/motor2.jpg">around.</a> See my <a href="images/wolf.jpg">wolf!</a></p>
+
+                                    <br>
+                                    <p>I do Computer Systems research!</><!-- focusing on operating systems, virtualization, cloud computing, and distributed computing.  My general interest is to see how systems (on one or multiple machines and all layers of computer systems) work and how to make them work even better.</p> -->
+                                    <p>I was as a Compiler Engineer at <a href="https://www.mediatek.com/">MediaTek</a> working on Android runtime, machine learning accelerator runtime and the related compiler things.</p>
+                                    <p>I play <a href="images/kendo.jpg">Kendo</a>.</p>
+                                    <p>I had a <a href="images/rock2.jpg">band</a> and we <a href="images/rock.jpg">ROCK</a>.</p>
+                                    <p>I motorcycle <a href="images/motor1.jpg">around</a> and <a href="images/motor2.jpg">around</a>. See my <a href="images/wolf.jpg">wolf</a>.</p>
 							</section>
 
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
 									<h3>Research</h3>
-									<p>My research interests is about operating systems, virtual machine monitors, distributed systems, and computer architecture.</p>
+                                    <p>My research focus span operating systems, virtualization, cloud computing, distributed computing, and computer architecture.  The general interest is to see how systems (on one or multiple machines and all layers of computer systems) work and how to make them work even better.</p>
+
+								    <h4><i style="color:#CD5C5C">Fluid OS (ongoing)</i></h4>
+                                    <p style="text-indent:1em;">With the proposal of hardware resource disaggregation, we believe that the paradigm of computer abstraction is shifting. While we used to think a computer is consists of a fixed set of hardware resources, the new computer abstraction is becoming <em>fluid</em>, where the hardware resources are abundant, heterogeneous, and elastic.
+<br>
+&nbsp &nbsp
+We aim to build an OS that is also fluid, i.e., it views hardware resources as a dynamic pool. It can boot with a small amount of CPU, memory and can grow more powerful (including GPU and accelerators!) upon demands from the applications. The applications on the Fluid OS then can request more resources under high load, and release them when the load is decreasing.
+<br>
+&nbsp &nbsp
+We believe that Fluid OS will foster the paradigm shift on disaggregation. Furthermore, it could even introduce another paradigm shift on programming applications as the programs now can request resources on the fly. Programers, ready to embrace the true resources elasticity?
+<br>
+</p>
+								    <h4><i style="color:#CD5C5C">Ziplog (ongoing)</i></h4>
+                                    <p style="text-indent:1em;">Near-realtime stram processing is getting more important in data-intensive applications. A key building block of it is the message queue (or message broker, event stream), such services include Corfu, Apache Kafka, Amazon Kinesis Streams, ... etc.
+<br>
+&nbsp &nbsp
+While heavily used, state-of-the-art shard log designs don't provide all the properties that application developers usually require, which are cross-shard total order, scalable throughput, and low latency. The Ziplog project tries to achieve all three: it guarantees total order, achieves scalable throughput, and experiences low latency!
+<br>
+</p>
+
+								    <h4><i style="color:#CD5C5C">HSA virtualization (past)</i></h4>
+                                    <p style="text-indent:1em;">Heterogeneous System Architecture (HSA) is an architecture developed by the HSA foundation aiming at reducing programmability barriers as well as improving communication efficiency for heterogeneous computing. 
+<br>
+&nbsp &nbsp
+While the new features in HSA enable more efficient heterogeneous computing, they also introduce new challenges to system virtualization, especially in memory virtualization and I/O virtualization. This work investigates the issues involved in HSA virtualization and implements a KVM-based hypervisor that supports the main features of HSA inside guest operating systems. Our system demonstrates that the GPU in the HSA-compliant AMD Kaveri machine can be effectively shared between multiple guest operating systems with near 95% of native performance.
+<br>
+</p>
 								</div>
 							</section>
 
@@ -73,11 +101,17 @@
 							<section id="three">
 								<div class="container">
 									<h3>Publication</h3>
-									<p><b>Yu-Ju Huang</b>, Hsuan-Heng Wu, Yeh-Ching Chung, Wei-Chung Hsu.
-                                       <br>"Building a KVM-based Hypervisor for a Heterogeneous System Architecture Compliant System.",
-                                            In the Proceedings of the12th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE),
-                                            Atlanta, Georgia, April 2016.
-                                       <br><b>Best Paper Award!</b></p>
+
+									<a href="https://dl.acm.org/doi/10.1145/2892242.2892246">Building a KVM-based Hypervisor for a Heterogeneous System Architecture Compliant System</a><br>
+                                    <b>Yu-Ju Huang</b>, Hsuan-Heng Wu, Yeh-Ching Chung, Wei-Chung Hsu<br>
+                                    <i>Proceedings of the 12th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (<b>VEE'16</b>)</i><br>
+                                    <b><i style="color:#E66C2C">Best Paper Award!</i></b>
+                                    <br><br>
+
+									<a href="https://wuklab.github.io/words/words21-wang.pdf">Disaggregated Applications Using Nanoservices</a><br>
+                                    Xinwen Wang, <b>Yu-Ju Huang</b>, Tiancheng Yuan, Robbert van Renesse<br>
+                                    <i>Workshop On Resource Disaggregation and Serverless (<b>WORD'21</b>)</i><br>
+
 								</div>
 							</section>
 
