@@ -22,11 +22,11 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Research</a></li>
-						<li><a href="#three">Publication</a></li>
-<!--						<li><a href="#four">Experience</a></li> -->
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#about" class="active">About</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#publication">Publication</a></li>
+						<li><a href="#teaching">Teaching</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -45,7 +45,7 @@
 				<!-- Main -->
 					<div id="main">
 						<!-- One -->
-							<section id="one">
+							<section id="about">
 								<div class="image main" data-position="center">
 									<img src="images/heading2.jpg" alt="" />
 								</div>
@@ -56,31 +56,31 @@
 									</header>
 
                                     <br>
-                                    <p>I do Computer Systems research!</><!-- focusing on operating systems, virtualization, cloud computing, and distributed computing.  My general interest is to see how systems (on one or multiple machines and all layers of computer systems) work and how to make them work even better.</p> -->
-                                    <p>I was as a Compiler Engineer at <a href="https://www.mediatek.com/">MediaTek</a> working on Android runtime, machine learning accelerator runtime and the related compiler things.</p>
+                                    <p>I do Computer Systems research!
+                                    The general interest is to see how systems (on one or multiple machines and all layers of computer systems) work and how to make them work even better. My research focus thus span operating systems, virtualization, cloud computing, distributed computing, and computer architecture.</p>
+                                    <p> I received my MS and BS in Computer Science from <a href="https://www.nctu.edu.tw/en">National Chiao Tung University</a> in 2009 and 2013 respectively where I worked with Prof. <a href="https://www.csie.ntu.edu.tw/~hsuwc/index.html">Wei-Chung Hsu</a> on virtualization.  After graduation, I spent three and a half years as a system software engineer at <a href="https://www.mediatek.com/">MediaTek</a> working on Android runtime, machine learning accelerator runtime and the related compiler things.</p>
                                     <p>I play <a href="images/kendo.jpg">Kendo</a>.</p>
                                     <p>I had a <a href="images/rock2.jpg">band</a> and we <a href="images/rock.jpg">ROCK</a>.</p>
                                     <p>I motorcycle <a href="images/motor1.jpg">around</a> and <a href="images/motor2.jpg">around</a>. See my <a href="images/wolf.jpg">wolf</a>.</p>
+                                    <p>My <a href="cv/CV_YuJu_Huang.pdf">CV.</a></p>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
+							<section id="research">
 								<div class="container">
 									<h3>Research</h3>
-                                    <p>My research focus span operating systems, virtualization, cloud computing, distributed computing, and computer architecture.  The general interest is to see how systems (on one or multiple machines and all layers of computer systems) work and how to make them work even better.</p>
-
 								    <h4><i style="color:#CD5C5C">Fluid OS (ongoing)</i></h4>
                                     <p style="text-indent:1em;">With the proposal of hardware resource disaggregation, we believe that the paradigm of computer abstraction is shifting. While we used to think a computer is consists of a fixed set of hardware resources, the new computer abstraction is becoming <em>fluid</em>, where the hardware resources are abundant, heterogeneous, and elastic.
 <br>
 &nbsp &nbsp
-We aim to build an OS that is also fluid, i.e., it views hardware resources as a dynamic pool. It can boot with a small amount of CPU, memory and can grow more powerful (including GPU and accelerators!) upon demands from the applications. The applications on the Fluid OS then can request more resources under high load, and release them when the load is decreasing.
+We aim to build an OS that is also fluid, i.e., it views hardware resources as a dynamic pool. It can boot with a small amount of CPU, memory and can grow more powerful (including GPU and accelerators!) upon requests from the applications. The applications on the Fluid OS then can request more resources under high load, and release them when the load is decreasing.
 <br>
 &nbsp &nbsp
-We believe that Fluid OS will foster the paradigm shift on disaggregation. Furthermore, it could even introduce another paradigm shift on programming applications as the programs now can request resources on the fly. Programers, ready to embrace the true resources elasticity?
+We believe that Fluid OS will foster the paradigm shift on disaggregation. Furthermore, it could even introduce another paradigm shift on programming applications as the programs now can request resources on the fly. Programmers, ready to embrace the true resources elasticity?
 <br>
 </p>
 								    <h4><i style="color:#CD5C5C">Ziplog (ongoing)</i></h4>
-                                    <p style="text-indent:1em;">Near-realtime stram processing is getting more important in data-intensive applications. A key building block of it is the message queue (or message broker, event stream), such services include Corfu, Apache Kafka, Amazon Kinesis Streams, ... etc.
+                                    <p style="text-indent:1em;">Near-realtime stream processing is getting more important in data-intensive applications. A key building block of it is the message queue (or message broker, event stream), such services include Corfu, Apache Kafka, Amazon Kinesis Streams, ... etc.
 <br>
 &nbsp &nbsp
 While heavily used, state-of-the-art shard log designs don't provide all the properties that application developers usually require, which are cross-shard total order, scalable throughput, and low latency. The Ziplog project tries to achieve all three: it guarantees total order, achieves scalable throughput, and experiences low latency!
@@ -98,7 +98,7 @@ While the new features in HSA enable more efficient heterogeneous computing, the
 							</section>
 
 						<!-- Three -->
-							<section id="three">
+							<section id="publication">
 								<div class="container">
 									<h3>Publication</h3>
 
@@ -115,8 +115,27 @@ While the new features in HSA enable more efficient heterogeneous computing, the
 								</div>
 							</section>
 
-						<!-- Four-->
-							<section id="three">
+						<!-- Four -->
+							<section id="teaching">
+								<div class="container">
+									<h3>Teaching</h3>
+                                    <h4>Cornell University</h4>
+                                    <p>
+                                    <span style="margin-left:2em">
+                                    Grad TA for CS 3410: Computer System Organization and Programming, Fall 2021<br>
+                                    </span>
+                                    <span style="margin-left:2em">
+                                    Head TA for CS 4411: Practicum in Operating Systems, Spring 2020<br>
+                                    </span>
+                                    <span style="margin-left:2em">
+                                    Head TA for CS 4410: Operating Systems, Fall 2020
+                                    </span>
+                                    </p>
+								</div>
+							</section>
+
+						<!-- Five-->
+							<section id="contact">
 								<div class="container">
 									<h3>Contact</h3>
 									<p>Email: yjhuang@cs.cornell.edu</p>
@@ -125,7 +144,6 @@ While the new features in HSA enable more efficient heterogeneous computing, the
 								</div>
 							</section>
 
-						<!-- Four -->
 <!--
 							<section id="four">
 								<div class="container">
