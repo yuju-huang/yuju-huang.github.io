@@ -23,7 +23,6 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="#about" class="active">About</a></li>
-						<li><a href="#research">Research</a></li>
 						<li><a href="#publication">Publication</a></li>
 						<li><a href="#work">Work experience</a></li>
 						<li><a href="#teaching">Teaching</a></li>
@@ -58,47 +57,33 @@
 									</header>
 
                                     <br>
-                                    <p>I do Computer Systems research!
-                                    The general interest is to see how systems (on one or multiple machines and all layers of computer systems) work and how to make them work even better. My research focus thus spans operating systems, virtualization, cloud computing, distributed computing, and computer architecture.</p>
+                                    I'm a final-year PhD student in Computer Science at Cornell University, advised by Prof. Robbert van Renesse. My research focuses on operating systems, virtualization, and distributed systems, with an emphasis on improving system performance and efficiency. My work spans several key projects:
+                                    <ol>
+                                        <li>Designing high-performance, strongly consistent consensus protocols to enhance transactional database performance.</li>
+                                        <li>Developing a distributed shared log that delivers low latency, high throughput, and total order guarantees at once.</li>
+                                        <li>Implementing a RDMA network stack to support low latency consensus protocol.</li>
+                                        <li>Enabling virtualization for emerging hardware features, such as unified address space for CPU and GPU.</li>
+                                    </ol>
 
-                                    </p>
-My research explores new directions of distributed shared logs - one of the most important building blocks in cloud applications today. The goal is to build a shared log that provides low latency, high throughput, and total order at once. These three properties are becoming important as cloud applications are demanding faster response time, higher request processing volume, and stronger consistency while providing these three properties in the same log design is an unanswered question in the current state-of-the-art. Such logs can significantly improve applications such as electronic trading, multi-player games, large scale simulations, and highly reliable replicated services.</p>
+                                    I has extensive industry experience, having worked as an Applied Scientist Intern at AWS on several projects:
+                                    <ol>
+                                        <li>Building vector databases for Generative AI and streaming data.</li>
+                                        <li>Developing a streaming pipeline to support real-time LLM inference.</li>
+                                        <li>Optimizing data lake storage and query performance.</li>
+                                        <li>Building a verification system for transactional key-value stores, a critical component of AWS’s S3 Express One.</li>
+                                    </ol>
+                                    Also, prior to PhD, I worked as a System Software Engineer at MediaTek, a leading IC design company. I developed compilers and runtimes for MediaTek’s in-house deep learning accelerator (DLA) and led a task force to improve DLA performance. I also contributed to Android’s Java compiler to optimize Android applications.
 
-                                    <p> I received my BS and MS in Computer Science from <a href="https://www.nctu.edu.tw/en">National Chiao Tung University</a> in 2009 and 2013 respectively where I worked with Prof. <a href="https://www.csie.ntu.edu.tw/~hsuwc/index.html">Wei-Chung Hsu</a> on operating systems and system virtualization.  After graduation, I spent three and a half years as a system software engineer at <a href="https://www.mediatek.com/">MediaTek</a> working on Android runtime, machine learning accelerator runtime, and related compiler optimizations.</p>
-                                    <p>I play <a href="images/kendo.jpg">Kendo</a> with <a href="images/kendo2.jpg">Cornell team</a>!</p>
-                                    <p>I had a <a href="images/rock2.jpg">band</a> and we <a href="images/rock.jpg">ROCK</a>!</p>
-                                    <p>I motorcycle <a href="images/motor1.jpg">around</a> and <a href="images/motor2.jpg">around</a>. See my <a href="images/wolf.jpg">wolf</a>!</p>
-							</section>
+                                    <br>
+                                    <br>
 
-						<!-- Two -->
-							<section id="research">
-								<div class="container">
-									<h3>Research</h3>
-								    <h4><i style="color:#CD5C5C">New shared log design (ongoing)</i></h4>
-                                    <p style="text-indent:1em;">Near-realtime stream processing is getting more important in data-intensive applications. A key building block of it is the message queue (or message broker, event stream), such services include Corfu, Apache Kafka, Amazon Kinesis Streams, ... etc.
-<br>
-&nbsp &nbsp
-While heavily used, state-of-the-art shard log designs don't provide all the properties that application developers usually require, which are cross-shard total order, scalable throughput, and low latency. The Ziplog project tries to achieve all three: it guarantees total order, achieves scalable throughput, and experiences low latency!
-<br>
-</p>
-								    <h4><i style="color:#CD5C5C">OS for disaggregated architecture (ongoing)</i></h4>
-                                    <p style="text-indent:1em;">With the proposal of hardware resource disaggregation, we believe that the paradigm of computer abstraction is shifting. While we used to think a computer is consists of a fixed set of hardware resources, the new computer abstraction is becoming <em>fluid</em>, where the hardware resources are abundant, heterogeneous, and elastic.
-<br>
-&nbsp &nbsp
-We aim to build an OS that is also fluid, i.e., it views hardware resources as a dynamic pool. It can boot with a small amount of CPU, memory and can grow more powerful (including GPU and accelerators!) upon requests from the applications. The applications on the Fluid OS then can request more resources under high load, and release them when the load is decreasing.
-<br>
-&nbsp &nbsp
-We believe that Fluid OS will foster the paradigm shift on disaggregation. Furthermore, it could even introduce another paradigm shift on programming applications as the programs now can request resources on the fly. Programmers, ready to embrace the true resources elasticity?
-<br>
-</p>
-								    <h4><i style="color:#CD5C5C">HSA virtualization (past)</i></h4>
-                                    <p style="text-indent:1em;">Heterogeneous System Architecture (HSA) is an architecture developed by the HSA foundation aiming at reducing programmability barriers as well as improving communication efficiency for heterogeneous computing. 
-<br>
-&nbsp &nbsp
-While the new features in HSA enable more efficient heterogeneous computing, they also introduce new challenges to system virtualization, especially in memory virtualization and I/O virtualization. This work investigates the issues involved in HSA virtualization and implements a KVM-based hypervisor that supports the main features of HSA inside guest operating systems. Our system demonstrates that the GPU in the HSA-compliant AMD Kaveri machine can be effectively shared between multiple guests operating systems with near 95% of native performance.
-<br>
-</p>
-								</div>
+                                    I earned my Bachelor's and Master's degrees in Computer Science from National Chiao-Tung University. During my Master's, I focused on virtualization and compiler runtime under the supervision of Prof. Wei-Chung Hsu.
+                                    <br>
+                                    <br>
+                                    In my spare time,<br>
+                                    I play <a href="images/kendo.jpg">Kendo</a> with <a href="images/kendo2.jpg">Cornell team</a>!<br>
+                                    I had a <a href="images/rock2.jpg">band</a> and we <a href="images/rock.jpg">ROCK</a>!<br>
+                                    I motorcycle <a href="images/motor1.jpg">around</a> and <a href="images/motor2.jpg">around</a>. See my <a href="images/wolf.jpg">wolf</a>!<br>
 							</section>
 
 						<!-- Three -->
